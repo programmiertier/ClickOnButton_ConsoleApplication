@@ -12,8 +12,12 @@ namespace ClickOnButton_ConsoleApplication
         static void Main(string[] args)
         {
             Button kleinerButton = new Button();
-            
+            kleinerButton.OnClick += new Button.Clickhandler(() => { WriteLine("noch was tun"); });
+
             // Hier soll ein Knopf gedrückt werden
+            // OnClick() Darf nicht direkt angeesprochen werden!
+            kleinerButton.click();
+            
 
             ReadLine();
         }
