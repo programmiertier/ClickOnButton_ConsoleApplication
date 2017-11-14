@@ -11,9 +11,14 @@
           <NewMemberFileName>Button.cs</NewMemberFileName>
         </TypeIdentifier>
       </Delegate>
+      <Delegate Name="ClickOnButton_ConsoleApplication.Button.temp" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Button.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAACAAAAAAABAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAACAAACAAABAAA=</HashCode>
       <FileName>Button.cs</FileName>
     </TypeIdentifier>
   </Class>

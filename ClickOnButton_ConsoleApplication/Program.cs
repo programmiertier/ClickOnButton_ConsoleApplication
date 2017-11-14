@@ -11,17 +11,22 @@ namespace ClickOnButton_ConsoleApplication
     {
         static void Main(string[] args)
         {
-            Button kleinerButton = new Button();
-            kleinerButton.OnClick += new Button.Clickhandler(() => { WriteLine("noch was tun"); });
+            Button kleinerButton = new Button("Button 1");
+            // kleinerButton.OnClick += new Button.Clickhandler(() => { });
 
             // Hier soll ein Knopf gedrückt werden
             // OnClick() Darf nicht direkt angeesprochen werden!
-            kleinerButton.click(ForegroundColor);
-            
+            /* kleinerButton.click(ConsoleColor.Blue);
+            ReadLine();
+            Button zweiterKnopf = new Button("zweiterKnopf");
+            zweiterKnopf.click(ConsoleColor.Yellow);
+            ReadLine(); */
+            Button zweiterKnopf = new Button("Button 2");
+            kleinerButton.OnClick += new Button.Clickhandler(() => { ForegroundColor = ConsoleColor.Green; });
+            kleinerButton.click(kleinerButton);
 
-            Button zweiterKnopf = new Button();
-            zweiterKnopf.click(ForegroundColor);
-            
+            zweiterKnopf.OnClick += new Button.Clickhandler(() => { ForegroundColor = ConsoleColor.Yellow; });
+            zweiterKnopf.click(zweiterKnopf);
 
             ReadLine();
         }
