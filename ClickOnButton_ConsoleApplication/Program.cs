@@ -16,7 +16,11 @@ namespace ClickOnButton_ConsoleApplication
 
             // Hier soll ein Knopf gedrückt werden
             // OnClick() Darf nicht direkt angeesprochen werden!
-            kleinerButton.click();
+            kleinerButton.click(ForegroundColor);
+            
+
+            Button zweiterKnopf = new Button();
+            zweiterKnopf.click(ForegroundColor);
             
 
             ReadLine();

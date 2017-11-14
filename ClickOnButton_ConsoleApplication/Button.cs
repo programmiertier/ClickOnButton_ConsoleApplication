@@ -16,14 +16,18 @@ namespace ClickOnButton_ConsoleApplication
 
         public Button()
         {
+            
             OnClick += click_recieved;
             OnClick += changeColorAfterClick;
             WriteLine("Knopf erstellt");
+
         }
 
-        public void click()
+        public void click(ConsoleColor jetzt)
         {
+            ForegroundColor = jetzt;
             OnClick();      // muss in einer Methode aufgerufen werden, darf sonst nicht angesprochen werden
+
         }
 
         public void click_recieved()
